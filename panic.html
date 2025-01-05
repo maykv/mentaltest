@@ -273,11 +273,14 @@ title.style.fontSize = '2em';
 title.style.marginBottom = '20px';
 
 const description = document.createElement('p');
-description.textContent = '이 테스트는 Panic Disorder Severity Scale 테스트를 기반으로 한 테스트입니다. 따라서 이 테스트는 단순 스스로 진단해보시는 용도로만 사용하시고, 자세한 내용은 전문가와의 상담을 요합니다.';
+description.innerHTML = `이 테스트는 Panic Disorder Severity Scale 테스트를 기반으로 한 테스트입니다. 따라서 이 테스트는 단순 스스로 진단해보시는 용도로만 사용하시고, 자세한 내용은 전문가와의 상담을 요합니다. <br><small>출처 : Shear MK, Brown TA, et al. Muticenter collaborative panic disorders everityscale. Am J Psychiatry. (1997)
+<br>Furukawa, T. A., et al. Evidence-based guidelines for interpretationa of Panic Disorder Severity Scale. (2009)
+<br>Kim JB. Development of the Korean version of the Panic DisorderSeverity Scale. Korean J Psychopathol. (2001)</small>`;
 description.style.fontSize = '1em';
 description.style.lineHeight = '1.6';
 description.style.marginBottom = '30px';
 description.style.color = '#cccccc';
+
 
 const startButton = document.createElement('button');
 startButton.textContent = '시작하기';
